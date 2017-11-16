@@ -15,9 +15,11 @@
   <%= @product.price %>
 </p>
 
-<div class="media-left">
-    <%= link_to image_tag(@product.photo.url, class: 'media-object'), @product.photo.url, target: '_blank' %>
-  </div>
+<div class="img-container">
+	<div id="img">
+    	<%= link_to image_tag(@product.photo.url, class: 'center-fit-show'), @product.photo.url, target: "_blank" %>
+	</div>
+</div>
   
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
