@@ -27,12 +27,6 @@
   width: 300px;
 }
 
-.main-container {
-	margin-left: 182px;
-	margin-right: 182px;
-	padding-left: 15px;
-	padding-right: 15px;
-}
 
 .thumb {
 	margin-right: 10px;
@@ -63,4 +57,17 @@
 
 img:hover {
 	color: black;
+}
+
+.thumbnail {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px){
+	.thumbnail {
+	width: 100%;
+	box-sizing: border-box;
+}
 }

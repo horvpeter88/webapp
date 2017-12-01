@@ -1,10 +1,10 @@
 <p id="notice"><%= notice %></p>
-<div class = "main-container">
+<div class = "container">
   <h1>Termékeink</h1>
 
 
       <% @products.each do |product| %>
-      <div class="row">
+      <!--<div class="row">-->
         <div class="thumbnail">
           <div class="thumb">
             <%= link_to image_tag(product.photo.url, class: 'center-fit'), product %>
@@ -25,7 +25,7 @@
             </div>
           </div>
         </div>
-        </div>
+        <!--</div>-->
       <% end %>
     
   <br>
